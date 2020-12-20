@@ -1,0 +1,134 @@
+html {
+    height: 100vh;
+}
+
+/* styling the upper portion of the header where the logo and page icons are located */
+
+.upper-header-container {
+    max-width: 100%;
+    min-height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.gender-categories {
+    width: 40%;
+    /* background-color: rgb(184, 92, 92); */
+    margin-left: 40px;
+    display: inline-block;
+}
+.gender-categories a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700px;
+    border-bottom: 3px solid white;
+    padding: 1px 0px;
+}
+.gender-categories i {
+    display: none;
+}
+.gender-categories a:hover {
+    color: red;
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.logo {
+    width: 20%;
+    /* background-color: rgb(118, 81, 219); */
+    text-align: center;
+}
+.menu-icons {
+    width: 40%;
+    /* background-color: rgb(95, 184, 92); */
+    display: inline-block;
+    text-align: right;
+    margin-right: 40px;
+}
+.menu-icons i {
+    color: white;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+/* hide on tablet */
+
+.hide-desktop {
+    display: none;
+}
+.hide-tablet {
+    display: block;
+}
+.hide-mobile {
+    display: block;
+}
+
+
+
+
+/* tablet responsiveness breakpoint */
+@media (max-width:714px) {
+
+    .gender-categories a {
+        display: none;
+    }
+
+    .gender-categories i {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-left: 0px;
+    }
+
+/* hide on tablet */
+
+.hide-desktop {
+    display: block;
+}
+.hide-tablet {
+    display: none;
+}
+.hide-mobile {
+    display: block;
+}
+
+}
+
+
+
+/* mobile responsiveness breakpoint */
+@media (max-width: 480px) {
+    .logo {
+        margin-right: 25px;
+    }
+    .menu-icons i:first-of-type {
+        display: none;
+    }
+    .menu-icons i:nth-of-type(2) {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+/* hide on mobile */
+    .hide-desktop {
+        display: block;
+    }
+    .hide-tablet {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    
+
+}
