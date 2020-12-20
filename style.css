@@ -1,5 +1,9 @@
 html {
-    height: 100vh;
+    /* min-height: 100vh; */
+}
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* styling the upper portion of the header where the logo and page icons are located */
@@ -52,8 +56,135 @@ html {
     font-size: 1rem;
     margin-left: 20px;
 }
+.menu-icons i:hover {
+    color: rgb(255, 0, 0);
+}
 
-/* hide on tablet */
+/* styling the lower portion of the header where the logo and page icons are located */
+
+.lower-header-container {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: space-between;
+    padding: 0px auto;
+}
+.lower-header-container a {
+    padding: 0px 1px;
+    margin: 0px auto;
+}
+.lower-header-container a {
+    flex:1;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* margin-right: 20px; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+}
+.lower-header-container a:hover {
+    color: red;
+}
+.main1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/main.jpg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: none;
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.main1-header {
+    width: 100%;
+}
+
+.main1 h1 {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    /* background-color: rgb(194, 95, 95); */
+}
+.main1 h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300px;
+    color: white;
+    /* text-shadow: 0px 0px 5px rgb(0, 0, 0); */
+    /* background-color: rgb(116, 35, 35); */
+}
+.cards {
+    max-width: 100%;
+    min-height: 300px;
+    /* background-color: blue; */
+    margin:0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.card {
+    margin:20px 0px;
+    box-shadow: 0px 0px 2px black;
+    box-sizing: border-box;
+}
+.cards img {
+    max-width: 100%;
+    height: 360px;
+}
+.card1 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(60, 255, 0);
+    /* background-image: url(images/blazer1.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding: 10px 10px; */
+}
+.card2 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(139, 34, 160);
+}
+.card3 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(73, 88, 69);
+}
+.card4 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(255, 153, 0);
+}
+.card5 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(255, 208, 0);
+}
+.card6 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(255, 217, 0);
+}
+.card7 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(255, 0, 191);
+}
+.card8 {
+    width: 22%;
+    min-height: 300px;
+    background-color: rgb(99, 116, 153);
+}
+
+
+/* hide on desktop */
 
 .hide-desktop {
     display: none;
@@ -80,6 +211,21 @@ html {
         color: white;
         font-size: 1rem;
         margin-left: 0px;
+    }
+    .lower-header-container {
+        display: none;
+    }
+    .main1 {
+        background-size: cover;
+    }
+    .main1 h1 {
+        font-size: 2.5rem;
+    }
+    .main1 h2 {
+        font-size: 1.2rem;
+    }
+    .card {
+        width: 44%;
     }
 
 /* hide on tablet */
@@ -108,6 +254,9 @@ html {
     }
     .menu-icons i:nth-of-type(2) {
         display: none;
+    }
+    .card {
+        width: 88%;
     }
 
 
