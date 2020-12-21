@@ -1,6 +1,3 @@
-html {
-    /* min-height: 100vh; */
-}
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -61,17 +58,24 @@ body {
     color: rgb(255, 0, 0);
 }
 
+
+
+.container {
+    padding-top: 60px;
+}
+
 /* styling the lower portion of the header where the logo and page icons are located */
 
 .lower-header-container {
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 226, 226);
     display: flex;
     text-align: center;
     align-items: center;
     justify-items: space-between;
     padding: 0px auto;
+    display: fixed;
 }
 .lower-header-container a {
     padding: 0px 1px;
@@ -96,7 +100,7 @@ body {
     background-size: contain;
     background-repeat: none;
     text-align: center;
-    display: flex;
+    display: none;
     flex-wrap:wrap;
     align-items: center;
 }
