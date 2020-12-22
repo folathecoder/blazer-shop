@@ -211,6 +211,12 @@ body {
 
 /* pre-mobile responsiveness breakpoint */
 @media (max-width: 480px) {
+    .menu-icons i:first-of-type {
+        display: none;
+    }
+    .menu-icons i:nth-of-type(2) {
+        display: none;
+    }
     .card {
         width: 88%;
     }
